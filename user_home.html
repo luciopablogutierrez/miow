@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz de Usuario</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 300px;
+            height: 800px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between; /* Para separar los elementos */
+            align-items: center;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ddd;
+            position: relative;
+            padding-right: 40px; /* Espacio para el ícono de menú */
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+        }
+
+        .profile-img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .greeting {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center; /* Centra el saludo */
+            flex-grow: 1; /* Ocupa el espacio restante */
+        }
+
+        .menu-icon {
+            font-size: 24px;
+            cursor: pointer;
+            position: absolute;
+            right: 20px;
+        }
+
+        .search-bar {
+            padding: 10px 20px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: center;
+        }
+
+        .search-bar input {
+            width: 80%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            font-size: 16px;
+        }
+
+        .main-image {
+            flex-grow: 1;
+            background-color: #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .carousel-dots {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            background-color: #bbb;
+            border-radius: 50%;
+            margin: 0 5px;
+        }
+
+        .bottom-menu {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            border-top: 1px solid #ddd;
+        }
+
+        .menu-item {
+            font-size: 24px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="profile">
+                <img src="profile.jpg" alt="Perfil" class="profile-img">
+                <span class="greeting">Hola Camilo!</span>
+            </div>
+            <div class="menu-icon">☰</div>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+        </div>
+        <div class="main-image"></div>
+        <div class="carousel-dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <div class="bottom-menu">
+            <div class="menu-item">🏠</div>
+            <div class="menu-item">🔔</div>
+            <div class="menu-item">🌐</div>
+            <div class="menu-item">💬</div>
+        </div>
+    </div>
+</body>
+</html>

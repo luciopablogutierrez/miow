@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla de Inicio de Sesión</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .login-container {
+            width: 300px;
+            height: 800px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .login-container img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .login-container h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .login-container input,
+        .login-container button {
+            width: 100%;
+            max-width: 260px; /* Para asegurarse de que se mantengan dentro del contenedor */
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box; /* Asegura que el padding no altere el tamaño */
+        }
+
+        .login-container button {
+            background-color: #4CAF50;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .login-container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <img src="cat.png" alt="Miow">
+        <h1>Miow</h1>
+        <input type="email" placeholder="Mail">
+        <input type="password" placeholder="Contraseña">
+        <button>Entrar</button>
+    </div>
+</body>
+</html>
